@@ -22,3 +22,25 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('IndexCrtl', function(){
+
+})
+.config(function($stateProvider, $urlRouterProvider){
+  $stateProvider.state('index',{
+url:'/index',
+views: {
+templateUrl:'index.html',
+controller:'IndexCrtl'
+}
+})
+
+$stateProvider.state('posts',{
+url:'/posts/:user',
+views: {
+templateUrl:'posts.html',
+controller:'PostsCrtl'
+}
+})
+$urlRouterProvider.otherwise('/inde')
+});
