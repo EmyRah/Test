@@ -42,5 +42,5 @@ templateUrl:'posts.html',
 controller:'PostsCrtl'
 }
 })
-$urlRouterProvider.otherwise('/inde')
+$urlRouterProvider.otherwise('/Index')
 });
